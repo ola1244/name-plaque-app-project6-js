@@ -1,57 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Name Plaque Application</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  
-<div class="wrapper"">
-  <h1>Name Plaque Application</h1>
+<html>
+  <head>
+    <meta charset="utf-8">
 
-  <p>Add any name of your chioce and we will show you how much it will cost. (Each letter is $5)</p>
+    <title>Name Plaque Application</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-  <div class="form">
-    <div class="field-container">
-      <input class="field-input" id="guessField" name="inputName" type="text" placeholder=" ">
-      <label class="field-placeholder" for="inputName">Enter a guess:</label>
-    </div>
+  <body>
+      <div class="wrapper">
+        <h1>Name Plaque Application</h1>
 
-  </div>
+        <p>Add any name of your chioce and we will show you how much it will cost. (Each letter is $5)</p>
+        
+        <div class="form">
+          <div class="field-container">
+            <input class="field-input" id="guessField" name="inputName" type="text" placeholder=" ">
+            <label class="field-placeholder" for="inputName">Enter a guess:</label>
+            
+          </div>
+          <label class ="msg-1" id="msg-1">
+          
+        </div>
 
-  <div class="plaque">
-    <div class="preview">
-      <div class="white-bg">
-        <span class="btn-round-left"></span>
-        <span class="btn-round-right"></span>
+        <div class="plaque">
+          <div class="preview">
+            <div class="white-bg">
+              <span class="btn-round-left"></span>
+              <span class="btn-round-right"></span>
+            </div>
+
+            <p class="plaque-prev">Your Name</p>
+
+          </div>
+
+          <div class="price">
+            <div class="">
+              <div class="price-tag">Total: <span id="plaquePrice">$0</span></div>
+              <input type="submit" value="Buy Now" class="buy-submit">
+              <input type="button" value="Refresh" class="refresh">
+            </div>
+
+          </div>
+          
+        </div>
+
+
       </div>
-
-      <p class="plaque-prev">Your Name</p>
-
-    </div>
-
-    <div class="price">
-      <div class="">
-        <div class="price-tag">Total: <span id="plaquePrice">$0</span></div>
-        <input type="submit" value="Buy Now" class="buy-submit">
+     
+    <a href="https://instincthub.com/" target="_blank">
+      <div class="from-instincthub">
+        <h3>from</h3>
+        <img src="https://raw.githubusercontent.com/instincthub/images/main/logo/instincthub-logo-white.svg" alt="" srcset="">
       </div>
-
-    </div>
-
-  </div>
+    </a>
 
 
-</div>
-<a href="https://instincthub.com/" target="_blank">
-<div class="from-instincthub">
-  <h3>from</h3>
-  <img src="https://raw.githubusercontent.com/instincthub/images/main/logo/instincthub-logo-white.svg" alt="" srcset="">
-</div>
-</a>
-<script src="script.js" charset="utf-8"></script>
-</body>
+    <script src="script.js" charset="utf-8"></script>
+    <script src="buy_now.js" charset="utf-8"></script>
+
+  </body>
 </html>
-
